@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   dropdowns.forEach(drop => {
     const button = drop.querySelector(".menu-btn");
-    const submenu = drop.querySelector(".submenu") || drop.querySelector(".submenu-grid");
+    const submenu = drop.querySelector(".submenu") || drop.querySelector(".megamenu");
 
     button.addEventListener("click", (e) => {
       e.stopPropagation();
 
-      document.querySelectorAll(".submenu, .submenu-grid").forEach(menu => {
+      document.querySelectorAll(".submenu, .megamenu").forEach(menu => {
         if (menu !== submenu) menu.style.display = "none";
       });
 
@@ -25,9 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.addEventListener("click", function (e) {
     if (!e.target.closest(".dropdown")) {
-      document.querySelectorAll(".submenu, .submenu-grid").forEach(menu => {
+      document.querySelectorAll(".submenu, .megamenu").forEach(menu => {
         menu.style.display = "none";
       });
     }
   });
 });
+
