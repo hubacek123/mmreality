@@ -79,12 +79,18 @@
       z-index: 1000;
       border: 1px solid #ccc;
       padding: 20px;
-      flex-direction: column;
-      min-width: 300px;
+      min-width: 500px;
+    }
+
+    .megamenu-vertical {
+      display: none;
+      flex-direction: row;
+      gap: 40px;
     }
 
     .megamenu-section {
-      margin-bottom: 20px;
+      flex: 1;
+      min-width: 200px;
     }
 
     .megamenu-section h4 {
@@ -127,7 +133,6 @@
     .dropdown.active .submenu,
     .dropdown.active .megamenu-vertical {
       display: flex;
-      flex-direction: column;
     }
 
     .kontakt a {
@@ -159,9 +164,11 @@
       .submenu,
       .megamenu-vertical {
         position: static;
+        transform: none;
         border: none;
         background-color: #f9f9f9;
         flex-direction: column;
+        min-width: auto;
       }
 
       .dropdown.active .submenu,
@@ -255,6 +262,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 
