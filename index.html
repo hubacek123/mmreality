@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>Testovací menu</title>
+  <title>Rozbalovací menu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Font Awesome pro ikony -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -77,30 +77,13 @@
       display: none;
       z-index: 1000;
       border: 1px solid #ccc;
-      padding: 10px;
-    }
-
-    .submenu li a {
-      display: block;
-      padding: 8px;
-      color: #000;
-      text-decoration: none;
-    }
-
-    .submenu li a:hover {
-      background-color: #f0f0f0;
-    }
-
-    .megamenu-vertical {
-      display: none;
-      flex-direction: row;
-      gap: 40px;
-      min-width: 400px;
+      padding: 20px;
+      flex-direction: column;
+      min-width: 300px;
     }
 
     .megamenu-section {
-      flex: 1;
-      min-width: 200px;
+      margin-bottom: 20px;
     }
 
     .megamenu-section h4 {
@@ -126,6 +109,18 @@
 
     .megamenu-section li a i {
       color: #4CAF50;
+    }
+
+    .submenu li a {
+      display: block;
+      padding: 8px;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .submenu li a:hover,
+    .megamenu-section li a:hover {
+      background-color: #f0f0f0;
     }
 
     .dropdown.active .submenu,
@@ -258,6 +253,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 
