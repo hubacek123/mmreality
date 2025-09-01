@@ -72,7 +72,8 @@
     .megamenu-vertical {
       position: absolute;
       top: 100%;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       background-color: white;
       display: none;
       z-index: 1000;
@@ -126,6 +127,7 @@
     .dropdown.active .submenu,
     .dropdown.active .megamenu-vertical {
       display: flex;
+      flex-direction: column;
     }
 
     .kontakt a {
@@ -253,6 +255,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 
