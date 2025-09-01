@@ -2,16 +2,183 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>Hlavička webu</title>
+  <title>Testovací menu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome pro ikony -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e6f4e6;
+    }
+
+    .hlavicka {
+      background-color: #4CAF50;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: flex;
+    }
+
+    .menu ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu ul li {
+      position: relative;
+    }
+
+    .menu a,
+    .menu-btn {
+      background: none;
+      border: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 10px;
+      text-decoration: none;
+    }
+
+    .submenu,
+    .megamenu-vertical {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      display: none;
+      z-index: 1000;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .submenu li a {
+      display: block;
+      padding: 8px;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .submenu li a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .megamenu-vertical {
+      display: none;
+      flex-direction: row;
+      gap: 40px;
+      min-width: 400px;
+    }
+
+    .megamenu-section {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .megamenu-section h4 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .megamenu-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .megamenu-section li a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 0;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .megamenu-section li a i {
+      color: #4CAF50;
+    }
+
+    .dropdown.active .submenu,
+    .dropdown.active .megamenu-vertical {
+      display: flex;
+    }
+
+    .kontakt a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      .menu {
+        display: none;
+        width: 100%;
+      }
+
+      .menu.active {
+        display: block;
+      }
+
+      .menu ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .submenu,
+      .megamenu-vertical {
+        position: static;
+        border: none;
+        background-color: #f9f9f9;
+        flex-direction: column;
+      }
+
+      .dropdown.active .submenu,
+      .dropdown.active .megamenu-vertical {
+        display: flex;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="hlavicka">
     <div class="container">
       <div class="logo">
-        <img src="logo-placeholder.png" alt="Logo">
+        <img src="https://via.placeholder.com/150x60?text=Logo" alt="Logo">
       </div>
 
       <button class="hamburger" aria-label="Menu">☰</button>
@@ -57,9 +224,42 @@
     </div>
   </header>
 
-  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.querySelector(".hamburger");
+      const menu = document.querySelector(".menu");
+
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+
+      const dropdowns = document.querySelectorAll(".dropdown");
+
+      dropdowns.forEach(drop => {
+        const button = drop.querySelector(".menu-btn");
+
+        button.addEventListener("click", (e) => {
+          e.stopPropagation();
+
+          dropdowns.forEach(d => {
+            if (d !== drop) d.classList.remove("active");
+          });
+
+          drop.classList.toggle("active");
+        });
+      });
+
+      document.addEventListener("click", function (e) {
+        if (!e.target.closest(".dropdown")) {
+          dropdowns.forEach(d => d.classList.remove("active"));
+        }
+      });
+    });
+  </script>
 </body>
 </html>
+
+
 
 
 
