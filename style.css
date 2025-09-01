@@ -99,15 +99,17 @@ body {
   left: 0;
   background-color: white;
   display: none;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 40px;
   padding: 20px;
   border: 1px solid #ccc;
   z-index: 1000;
-  min-width: 300px;
+  min-width: 400px;
 }
 
 .megamenu-section {
-  margin-bottom: 20px;
+  flex: 1;
+  min-width: 200px;
 }
 
 .megamenu-section h4 {
@@ -126,10 +128,22 @@ body {
   padding: 8px 0;
   color: #000;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.megamenu-section li a i {
+  color: #4CAF50;
 }
 
 .megamenu-section li a:hover {
   text-decoration: underline;
+}
+
+.dropdown.active .submenu,
+.dropdown.active .megamenu-vertical {
+  display: flex;
 }
 
 .kontakt a {
@@ -188,6 +202,11 @@ body {
     flex-direction: column;
   }
 
+  .dropdown.active .submenu,
+  .dropdown.active .megamenu-vertical {
+    display: flex;
+  }
+
   .megamenu-section h4 {
     font-size: 14px;
   }
@@ -200,6 +219,8 @@ body {
     margin-top: 20px;
   }
 }
+
+
 
 
 
