@@ -155,6 +155,66 @@
       font-size: 16px;
     }
 
+    .sluzby {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.sluzby-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.sluzby-sloupec {
+  flex: 1;
+  min-width: 280px;
+}
+
+.sluzby-sloupec h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sluzba {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.sluzba i {
+  font-size: 28px;
+  color: #4CAF50;
+  flex-shrink: 0;
+}
+
+.sluzba-text h3 {
+  font-size: 18px;
+  margin: 0 0 6px;
+  color: #222;
+}
+
+.sluzba-text p {
+  margin: 0;
+  font-size: 15px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .sluzby-container {
+    flex-direction: column;
+  }
+
+  .sluzby-sloupec {
+    margin-bottom: 30px;
+  }
+}
+
+
     @media (max-width: 768px) {
       .hamburger {
         display: block;
@@ -211,25 +271,66 @@
           <li><a href="#">Chci prodat</a></li>
           <li class="dropdown">
             <button class="menu-btn">Služby ▼</button>
-            <div class="megamenu-vertical">
-              <div class="megamenu-section">
-                <h4>Naše produkty</h4>
-                <ul>
-                  <li><a href="#"><i class="fa-solid fa-house"></i> Prodej a nákup nemovitostí</a></li>
-                  <li><a href="#"><i class="fa-solid fa-hand-holding-usd"></i> Financování bydlení</a></li>
-                  <li><a href="#"><i class="fa-solid fa-shield-alt"></i> Pojištění</a></li>
-                </ul>
-              </div>
-              <div class="megamenu-section">
-                <h4>Development a Investice</h4>
-                <ul>
-                  <li><a href="#"><i class="fa-solid fa-money-bill-wave"></i> Výkup nemovitostí za hotovost</a></li>
-                  <li><a href="#"><i class="fa-solid fa-tools"></i> Rekonstrukce bytových jednotek</a></li>
-                  <li><a href="#"><i class="fa-solid fa-building"></i> Rekonstrukce bytových domů</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
+            <section class="sluzby">
+  <div class="sluzby-container">
+    <div class="sluzby-sloupec">
+      <h2>Naše produkty</h2>
+
+      <div class="sluzba">
+        <i class="fa-solid fa-house"></i>
+        <div class="sluzba-text">
+          <h3>Prodej a nákup nemovitostí</h3>
+          <p>Komplexní servis při prodeji i koupi nemovitostí v ČR i zahraničí.</p>
+        </div>
+      </div>
+
+      <div class="sluzba">
+        <i class="fa-solid fa-hand-holding-usd"></i>
+        <div class="sluzba-text">
+          <h3>Financování bydlení</h3>
+          <p>Pomůžeme vám najít nejvýhodnější hypotéku nebo úvěr na bydlení.</p>
+        </div>
+      </div>
+
+      <div class="sluzba">
+        <i class="fa-solid fa-shield-alt"></i>
+        <div class="sluzba-text">
+          <h3>Pojištění</h3>
+          <p>Spolupracujeme s předními pojišťovnami pro ochranu vašeho majetku.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sluzby-sloupec">
+      <h2>Development a Investice</h2>
+
+      <div class="sluzba">
+        <i class="fa-solid fa-money-bill-wave"></i>
+        <div class="sluzba-text">
+          <h3>Výkup nemovitostí za hotovost</h3>
+          <p>Rychlý a férový výkup nemovitostí bez zbytečných průtahů.</p>
+        </div>
+      </div>
+
+      <div class="sluzba">
+        <i class="fa-solid fa-tools"></i>
+        <div class="sluzba-text">
+          <h3>Rekonstrukce bytových jednotek</h3>
+          <p>Profesionální rekonstrukce s důrazem na kvalitu a design.</p>
+        </div>
+      </div>
+
+      <div class="sluzba">
+        <i class="fa-solid fa-building"></i>
+        <div class="sluzba-text">
+          <h3>Rekonstrukce bytových domů</h3>
+          <p>Kompletní revitalizace objektů pro zvýšení hodnoty a komfortu.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
           <li><a href="#">Aukce</a></li>
         </ul>
       </nav>
@@ -274,6 +375,7 @@
   </script>
 </body>
 </html>
+
 
 
 
