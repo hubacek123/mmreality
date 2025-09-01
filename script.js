@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".hamburger");
   const menu = document.querySelector(".menu");
 
+  // Mobilní menu toggle
   hamburger.addEventListener("click", () => {
     menu.classList.toggle("active");
   });
@@ -10,27 +11,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   dropdowns.forEach(drop => {
     const button = drop.querySelector(".menu-btn");
-    const submenu = drop.querySelector(".submenu") || drop.querySelector(".megamenu-vertical");
 
     button.addEventListener("click", (e) => {
       e.stopPropagation();
 
-      document.querySelectorAll(".submenu, .megamenu-vertical").forEach(menu => {
-        if (menu !== submenu) menu.style.display = "none";
+      // Zavřít ostatní dropdowny
+      dropdowns.forEach(d => {
+        if (d !== drop) d.classList.remove("active");
       });
 
-      submenu.style.display = submenu.style.display === "flex" ? "none" : "flex";
+      // Přepnout aktuální dropdown
+      drop.classList.toggle("active");
     });
   });
 
+  // Kliknutí mimo dropdown zavře vše
   document.addEventListener("click", function (e) {
     if (!e.target.closest(".dropdown")) {
-      document.querySelectorAll(".submenu, .megamenu-vertical").forEach(menu => {
-        menu.style.display = "none";
-      });
+      dropdowns.forEach(d => d.classList.remove("active"));
     }
   });
 });
+
+
 
 
 
