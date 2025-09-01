@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Hlavička webu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="hlavicka">
+    <div class="container">
+      <div class="logo">
+        <!-- Logo bude doplněno později -->
+        <img src="logo-placeholder.png" alt="Logo M&M Reality">
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li class="dropdown">
+            <a href="#">Nabídka nemovitostí <i class="fas fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="#">Nemovitosti v ČR</a></li>
+              <li><a href="#">Zahraniční nemovitosti</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Služby <i class="fas fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="#">Prodej a nákup nemovitostí</a></li>
+              <li><a href="#">Financování bydlení</a></li>
+              <li><a href="#">Pojištění</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Development a Investice <i class="fas fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="#">Výkup nemovitostí za hotové</a></li>
+              <li><a href="#">Rekonstrukce bytových jednotek</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="kontakt">
+        <a href="#"><i class="fas fa-envelope"></i> Kontakt</a>
+      </div>
+    </div>
+  </header>
+</body>
+</html>
