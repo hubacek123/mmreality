@@ -324,10 +324,11 @@ input, select, button {
     padding: 30px;
   }
 
-  .logo {
-    height: 80px;
-    align-items: center;
-  }
+ .logo {
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
 
   header {
     margin-top: 60px;
@@ -393,6 +394,7 @@ input, select, button {
     color: #555;
   }
 }
+
 
 
 
