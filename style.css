@@ -371,6 +371,10 @@ input, select, button {
   color: #fff;
 }
 
+.hidden {
+  transform: translateX(100%);
+}
+
 /* Responsivita */
 @media (max-width: 768px) {
 
@@ -520,6 +524,7 @@ input, select, button {
     display: none;
   }
 }
+
 
 
 
