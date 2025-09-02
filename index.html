@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Hlavička mm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Pevné horní menu -->
+  <div class="topbar">
+    <div class="nav-container">
+      <img src="logo.png" alt="Logo" class="logo">
+
+      <button class="hamburger" aria-label="Menu">
+  <i class="fas fa-bars"></i> <span class="hamburger-label">Menu</span>
+</button>
+      <nav class="nav-menu">
+        <ul class="menu">            
+          <li>
+            <a href="#">Nabídka nemovitostí ▾</a>
+            <div class="mega-menu">
+              <div class="column">                        
+                <a href="#">Nemovitosti v ČR</a>
+                <a href="#">Zahraniční nemovitosti</a>                        
+              </div>                                      
+            </div>
+          </li>
+          <li><a href="#">Chci prodat</a></li>
+          <li>
+            <a href="#">Služby ▾</a>
+            <div class="mega">
+              <div class="column">
+                <h3>Naše produkty</h3>
+                <a href="#">Prodej a nákup nemovitostí</a>
+                <a href="#">Financování bydlení</a>
+                <a href="#">Pojištění</a>
+              </div>
+              <div class="column">
+                <h3>Development a Investice</h3>
+                <a href="#">Výkup nemovitostí za hotovost</a>
+                <a href="#">Rekonstrukce bytových jednotek</a>
+                <a href="#">Rekonstrukce bytových domů</a>
+              </div>                    
+            </div>
+          </li>
+          <li><a href="#">Aukce</a></li>         
+        </ul>
+      </nav>
+      <div class="topbar-icons">
+  <a href="#" class="icon-btn" aria-label="Notifikace"><i class="fas fa-bell"></i></a>
+  <a href="#" class="icon-btn" aria-label="Oblíbené"><i class="fas fa-heart"></i></a>
+  <a href="#" class="kontakty-btn">Kontakty</a>
+</div>
+
+    </div>
+  </div>
+
+  <!-- Hlavička s obrázkem -->
+  <header>
+    <div class="hero-text">
+      <h1>Vybírejte z 9 991 nabídek realit</h1>  
+      <h2>S největší realitní kanceláří v ČR</h2>    
+    </div>
+  </header>
+
+  <!-- Obsah stránky -->
+  <main>
+      
+  <section class="search-box">
+    <form>
+      <div class="form-group">
+        <label for="lokalita">Lokalita</label>
+        <input type="text" id="lokalita" placeholder="Zadejte město nebo ulici">
+      </div>
+
+      <div class="form-group">
+  <label>Druh nabídky</label>
+  <div class="button-group" id="offer-type">
+    <button type="button" class="toggle-button active">Prodej</button>
+    <button type="button" class="toggle-button">Pronájem</button>
+  </div>
+</div>
+
+      <div class="form-group">
+        <label for="typ">Typ nemovitosti</label>
+        <select id="typ">
+          <option value="dum">Dům</option>
+          <option value="pozemek">Pozemek</option>
+          <option value="objekt">Komerční objekt</option>
+          <option value="ostatni">Ostatní</option>
+        </select>
+      </div>
+
+      <button class="search-button">Zobrazit 8 336 nemovitostí</button>
+      <a href="#" class="search-id">Hledat dle ID zakázky</a>
+    </form>
+
+    <p class="recent-searches">
+      Poslední hledané: Prodej bytů, domů, pozemků, komerčních objektů a ostatních...
+    </p>
+  </section>
+</main> 
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
