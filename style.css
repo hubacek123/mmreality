@@ -58,24 +58,6 @@ body {
   height: 100px;
 }
 
-/* Hamburger */
-.hamburger {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-  align-items: center;
-  gap: 10px;
-}
-
-.hamburger-label {
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-}
-
 /* Navigace */
 .nav-menu {
   display: flex;
@@ -293,88 +275,6 @@ input, select, button {
   text-decoration: none;
 }
 
-/* Mobilní panel zprava */
-.mobile-panel {
-  position: fixed;
-  top: 0;
-  right: -280px;
-  width: 280px;
-  height: 100vh;
-  background-color: #3a7c31;
-  color: white;
-  z-index: 1001;
-  padding: 20px;
-  transition: right 0.3s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.mobile-panel.active {
-  right: 0;
-}
-
-.mobile-list {
-  list-style: none;
-  padding: 0;
-}
-
-.mobile-list li {
-  margin-bottom: 15px;
-}
-
-.mobile-list a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.mobile-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.action-btn {
-  background-color: rgba(255,255,255,0.1);
-  color: white;
-  padding: 10px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.call-btn {
-  background-color: #d10000;
-  color: white;
-  padding: 12px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
-}
-
-.hours {
-  font-size: 13px;
-  text-align: center;
-  margin-top: 10px;
-  color: #fff;
-}
-
-@media (min-width: 769px) {
-  .mobile-panel {
-    display: none;
-  }
-}
-
-
 /* Responsivita */
 @media (max-width: 768px) {
 
@@ -386,15 +286,7 @@ input, select, button {
   .topbar-icons {   
     color: white;
   }
-
-  .hamburger {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 10px;
-    margin-top: -30px;
-  }
-
+  
   .nav-menu {
     flex-direction: column;
     overflow: hidden;
@@ -518,12 +410,9 @@ input, select, button {
     margin-top: -20px;
     font-size: 13px;
     color: #555;
-  }
-
-   .mobile-panel {
-    display: none;
-  }
+  } 
 }
+
 
 
 
