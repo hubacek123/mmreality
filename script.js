@@ -23,4 +23,18 @@ offerButtons.forEach(button => {
     button.classList.add('active');
     hiddenInput.value = button.textContent.trim(); // uloží "Prodej" nebo "Pronájem"
   });
+
+const mobilePanel = document.getElementById('mobile-panel');
+
+hamburger.addEventListener('click', (e) => {
+  e.stopPropagation();
+  mobilePanel.classList.toggle('active');
+});
+
+document.addEventListener('click', (e) => {
+  if (!mobilePanel.contains(e.target) && !hamburger.contains(e.target)) {
+    mobilePanel.classList.remove('active');
+  }
+});
+  
 });
