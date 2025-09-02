@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  padding-top: 80px;
+}
+
+/* Pevné horní menu */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(58, 124, 49, 0.9);
+  backdrop-filter: blur(8px);  
+  z-index: 1000;
+  color: white;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 10px 30px;
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.logo {
+  height: 100px;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  align-items: center;
+  gap: 10px;
+}
+
+.hamburger-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigace */
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.nav-menu.active {
+  max-height: 500px;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+}
+
+/* Mega menu */
+.mega-menu,
+.mega {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(58, 124, 49, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: none;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  border: 1px solid white;
+  z-index: 999;
+}
+
+.mega-menu {
+  width: 220px;
+}
+
+.mega {
+  width: 530px;
+}
+
+.menu li:hover .mega-menu,
+.menu li:hover .mega {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mega-menu .column,
+.mega .column {
+  width: 100%;
+}
+
+.mega-menu h3,
+.mega h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.mega-menu a,
+.mega a {
+  color: #fff;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.mega-menu a:hover,
+.mega a:hover {
+  color: #c6c6c6;
+}
+
+/* Hlavička */
+header {
+  background-image: url('domov.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-top: 38px;
+}
+
+
+header h1 {
+  color: #fff;
+  font-size: 55px;
+  margin-left: -300px;
+}
+
+header h2 {
+  color: #fff;
+  font-size: 25px;
+  margin-left: -750px;
+}
+
+.hero-text {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.search-box {
+  background-color: rgba(198, 255, 198, 0.5); /* světle zelená s mírnou průhledností */
+  backdrop-filter: blur(8px);  
+  padding: 30px;
+  max-width: 1140px;
+  margin: 40px auto;
+  margin-top: -30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+.search-box form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.form-group {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input, select, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-button {
+  background-color: #d10000;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-id {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.recent-searches {
+  margin-top: -20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.toggle-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-button.active {
+  background-color: #039333;
+  color: white;
+  border-color: #039333;
+}
+
+
+/* Responsivita */
+@media (max-width: 768px) {
+
+.topbar {  
+  width: 100%;
+  max-height: 180px;  
+}
+
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: -30px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
+    width: 100%;
+  }
+
+  .nav-menu.active {
+    max-height: 500px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #039333; 
+    
+    }
+
+  .mega-menu,
+  .mega {
+    background-color: #039333;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    gap: 30px;    
+  }
+
+  .mega-menu .column,
+  .mega .column {
+    width: 100%;
+  }
+
+  header {
+    background-image: url('domov2.jpg');
+    margin-top: 100px;
+  }
+
+  header h1 {
+    font-size: 30px;
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+
+  header h2 {
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+ .logo {
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+  header {
+    margin-top: 60px;
+  }
+
+  .search-box {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .search-box form {
+    display: block; /* ✅ místo flex */
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .toggle-button {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .search-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .search-id {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .recent-searches {
+    margin-top: -20px;
+    font-size: 13px;
+    color: #555;
+  }
+}
+
+
+
+
+
+
+
+
+
+
