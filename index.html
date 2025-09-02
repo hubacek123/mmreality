@@ -38,110 +38,7 @@
       border: none;
       color: white;
       cursor: pointer;
-    }
-
-    .menu {
-      display: flex;
-    }
-
-    .menu ul {
-      list-style: none;
-      display: flex;
-      gap: 30px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .menu ul li {
-      position: relative;
-    }
-
-    .menu a,
-    .menu-btn {
-      background: none;
-      border: none;
-      color: white;
-      font-weight: bold;
-      font-size: 16px;
-      cursor: pointer;
-      padding: 10px;
-      text-decoration: none;
-    }
-
-    .submenu {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: white;
-      display: none;
-      flex-direction: column;
-      min-width: 200px;
-      z-index: 1000;
-      border: 1px solid #ccc;
-      padding: 10px;
-    }
-
-    .submenu li a {
-      padding: 8px;
-      color: #000;
-      text-decoration: none;
-      display: block;
-    }
-
-    .submenu li a:hover {
-      background-color: #f0f0f0;
-    }
-
-    .megamenu-vertical {
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: white;
-      display: none;
-      z-index: 1000;
-      border: 1px solid #ccc;
-      padding: 20px;
-      min-width: 500px;
-      display: flex;
-      flex-direction: row;
-      gap: 40px;
-    }
-
-    .megamenu-section {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .megamenu-section h4 {
-      margin-bottom: 10px;
-      font-size: 16px;
-      color: #333;
-    }
-
-    .megamenu-section ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .megamenu-section li a {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 0;
-      color: #000;
-      text-decoration: none;
-    }
-
-    .megamenu-section li a i {
-      color: #4CAF50;
-    }
-
-    .megamenu-section li a:hover {
-      background-color: #f0f0f0;
-    }
+    }    
 
     .dropdown.active .submenu,
     .dropdown.active .megamenu-vertical {
@@ -213,42 +110,7 @@
     margin-bottom: 30px;
   }
 }
-
-
-    @media (max-width: 768px) {
-      .hamburger {
-        display: block;
-      }
-
-      .menu {
-        display: none;
-        width: 100%;
-      }
-
-      .menu.active {
-        display: block;
-      }
-
-      .menu ul {
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      .submenu,
-      .megamenu-vertical {
-        position: static;
-        transform: none;
-        border: none;
-        background-color: #f9f9f9;
-        flex-direction: column;
-        min-width: auto;
-      }
-
-      .megamenu-section {
-        margin-bottom: 20px;
-      }
-    }
-  </style>
+</style>
 </head>
 <body>
   <header class="hlavicka">
@@ -261,15 +123,7 @@
 
       <nav class="menu">
         <ul>
-          <li class="dropdown">
-            <button class="menu-btn">Nabídka nemovitostí ▼</button>
-            <ul class="submenu">
-              <li><a href="#">Nemovitosti v ČR</a></li>
-              <li><a href="#">Zahraniční nemovitosti</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Chci prodat</a></li>
-          <li class="dropdown">
+          <li class="dropdown">            
             <button class="menu-btn">Služby ▼</button>
             <section class="sluzby">
   <div class="sluzby-container">
@@ -325,17 +179,12 @@
   </div>
 </section>
 
-          <li><a href="#">Aukce</a></li>
-        </ul>
-      </nav>
-
-      <div class="kontakt">
-        <a href="#">KONTAKT</a>
-      </div>
-    </div>
+         
+   
   </header>  
 </body>
 </html>
+
 
 
 
