@@ -81,8 +81,6 @@ body {
   display: none;
 }
 
-
-
 .nav-container {
   display: flex;
   align-items: center;
@@ -335,6 +333,10 @@ input, select, button {
   max-height: 180px;  
 }
 
+  .topbar-actions {
+    display: none;
+  }
+
   .hamburger {
     display: flex;
     justify-content: center;
@@ -468,6 +470,7 @@ input, select, button {
     color: #555;
   }
 }
+
 
 
 
