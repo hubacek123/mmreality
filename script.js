@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.querySelector('.nav-menu');
   const mobilePanel = document.getElementById('mobile-panel');
 
-  // Klik na hamburger
   hamburger.addEventListener('click', (e) => {
     e.stopPropagation();
 
@@ -16,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Klik mimo menu – zavřít obě
   document.addEventListener('click', (e) => {
     if (!hamburger.contains(e.target)) {
       navMenu.classList.remove('active');
@@ -24,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
 
 
 
