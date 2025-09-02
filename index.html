@@ -11,22 +11,6 @@
 <body>
   <!-- Pevné horní menu -->
   <div class="topbar">
-<!-- Modální okno: Oblíbené -->
-<div id="oblibene-modal" class="modal hidden">
-  <div class="modal-content">
-    <span class="close" onclick="toggleModal('oblibene-modal')">&times;</span>
-    <h2>Oblíbené položky</h2>
-    <p>Nemáte zatím žádné oblíbené nemovitosti.</p>
-  </div>
-</div>    
-    <div class="nav-container">
-      <img src="logo.png" alt="Logo" class="logo">
-      <!-- Ikony a Kontakty -->
-    <div class="topbar-actions">
-      <button class="icon-btn" aria-label="Notifikace"><i class="fas fa-bell"></i></button>
-      <button class="icon-btn" aria-label="Oblíbené"><i class="fas fa-heart"></i></button>
-      <a href="#" class="kontakty-btn">Kontakty</a>
-    </div>
       <!-- Hamburger pro mobil -->
     <button class="hamburger" aria-label="Menu">
       <i class="fas fa-bars"></i> <span class="hamburger-label">Menu</span>
@@ -61,6 +45,22 @@
             </div>
           </li>
           <li><a href="#">Aukce</a></li>
+          <!-- Modální okno: Oblíbené -->
+<div id="oblibene-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" onclick="toggleModal('oblibene-modal')">&times;</span>
+    <h2>Oblíbené položky</h2>
+    <p>Nemáte zatím žádné oblíbené nemovitosti.</p>
+  </div>
+</div>    
+    <div class="nav-container">
+      <img src="logo.png" alt="Logo" class="logo">
+      <!-- Ikony a Kontakty -->
+    <div class="topbar-actions">
+      <button class="icon-btn" aria-label="Notifikace"><i class="fas fa-bell"></i></button>
+      <button class="icon-btn" aria-label="Oblíbené"><i class="fas fa-heart"></i></button>
+      <a href="#" class="kontakty-btn">Kontakty</a>
+    </div>
         </ul>
       </nav>
     </div>
@@ -115,6 +115,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
