@@ -157,7 +157,7 @@ header {
 
 header h1 {
   color: #fff;
-  font-size: 55px;
+  font-size: 50px;
   margin-left: -300px;
 }
 
@@ -406,6 +406,7 @@ input, select, button {
     color: #555;
   }
 }
+
 
 
 
