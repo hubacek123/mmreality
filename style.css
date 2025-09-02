@@ -158,13 +158,13 @@ header {
 header h1 {
   color: #fff;
   font-size: 50px;
-  margin-left: -300px;
+  margin-left: -350px;
 }
 
 header h2 {
   color: #fff;
   font-size: 25px;
-  margin-left: -750px;
+  margin-left: -700px;
 }
 
 .hero-text {
@@ -406,6 +406,7 @@ input, select, button {
     color: #555;
   }
 }
+
 
 
 
