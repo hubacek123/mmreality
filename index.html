@@ -11,6 +11,35 @@
 <body>
   <!-- Pevné horní menu -->
   <div class="topbar">
+<!-- Ikony v topbaru -->
+<div class="topbar-actions">
+  <button class="icon-btn" onclick="toggleModal('notifikace-modal')" aria-label="Notifikace">
+    <i class="fas fa-bell"></i>
+  </button>
+  <button class="icon-btn" onclick="toggleModal('oblibene-modal')" aria-label="Oblíbené">
+    <i class="fas fa-heart"></i>
+  </button>
+  <a href="#" class="kontakty-btn">Kontakty</a>
+</div>
+<!-- Modální okno: Notifikace -->
+<div id="notifikace-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" onclick="toggleModal('notifikace-modal')">&times;</span>
+    <h2>Notifikace</h2>
+    <p>Zatím žádné nové notifikace.</p>
+  </div>
+</div>
+
+<!-- Modální okno: Oblíbené -->
+<div id="oblibene-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" onclick="toggleModal('oblibene-modal')">&times;</span>
+    <h2>Oblíbené položky</h2>
+    <p>Nemáte zatím žádné oblíbené nemovitosti.</p>
+  </div>
+</div>
+
+    
     <div class="nav-container">
       <img src="logo.png" alt="Logo" class="logo">
       <!-- Ikony a Kontakty -->
@@ -107,6 +136,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
