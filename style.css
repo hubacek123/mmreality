@@ -325,7 +325,7 @@ input, select, button {
   }
 
  .logo {
-  height: 80px;
+  height: 100px;
   display: block;
   margin: 0 auto;
 }
@@ -394,6 +394,7 @@ input, select, button {
     color: #555;
   }
 }
+
 
 
 
