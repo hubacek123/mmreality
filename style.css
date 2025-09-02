@@ -308,14 +308,17 @@ input, select, button {
   transition: transform 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;  
-  border: 2px solid red;
-
+  justify-content: space-between;
 }
 
 .mobile-panel.active {
   transform: translateX(0);
 }
+
+.hidden {
+  transform: translateX(100%);
+}
+
 
 .mobile-list {
   list-style: none;
@@ -369,10 +372,6 @@ input, select, button {
   text-align: center;
   margin-top: 10px;
   color: #fff;
-}
-
-.hidden {
-  transform: translateX(100%);
 }
 
 /* Responsivita */
@@ -524,6 +523,7 @@ input, select, button {
     display: none;
   }
 }
+
 
 
 
