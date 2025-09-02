@@ -309,6 +309,7 @@ input, select, button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: none; /* odstraní červený rámeček */
 }
 
 .mobile-panel.active {
@@ -318,7 +319,6 @@ input, select, button {
 .hidden {
   transform: translateX(100%);
 }
-
 
 .mobile-list {
   list-style: none;
@@ -523,6 +523,7 @@ input, select, button {
     display: none;
   }
 }
+
 
 
 
