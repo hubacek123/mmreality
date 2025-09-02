@@ -513,13 +513,13 @@ input, select, button {
     font-size: 13px;
     color: #555;
   }
-}
 
-@media (min-width: 769px) {
-  .mobile-panel {
+   .mobile-panel {
     display: none;
   }
 }
+
+
 
 
 
