@@ -10,53 +10,75 @@
 </head>
 <body>
   <!-- Pevné horní menu -->
-  <div class="topbar">
-    <div class="nav-container">
-      <img src="logo.png" alt="Logo" class="logo">
+  <!-- Topbar -->
+<div class="topbar">
+  <div class="nav-container">
+    <img src="logo.png" alt="Logo" class="logo">
 
-      <button class="hamburger" aria-label="Menu">
-  <i class="fas fa-bars"></i> <span class="hamburger-label">Menu</span>
-</button>
-      <nav class="nav-menu">
-        <ul class="menu">            
-          <li>
-            <a href="#">Nabídka nemovitostí ▾</a>
-            <div class="mega-menu">
-              <div class="column">                        
-                <a href="#">Nemovitosti v ČR</a>
-                <a href="#">Zahraniční nemovitosti</a>                        
-              </div>                                      
+    <div class="topbar-icons">
+      <a href="#" class="icon-btn"><i class="fas fa-bell"></i></a>
+      <a href="#" class="icon-btn"><i class="fas fa-heart"></i></a>
+      <a href="#" class="kontakty-btn">Kontakty</a>
+    </div>
+
+    <button class="hamburger" aria-label="Menu">
+      <i class="fas fa-bars"></i> <span class="hamburger-label">Menu</span>
+    </button>
+
+    <nav class="nav-menu">
+      <ul class="menu">
+        <li>
+          <a href="#">Nabídka nemovitostí ▾</a>
+          <div class="mega-menu">
+            <div class="column">
+              <a href="#">Nemovitosti v ČR</a>
+              <a href="#">Zahraniční nemovitosti</a>
             </div>
-          </li>
-          <li><a href="#">Chci prodat</a></li>
-          <li>
-            <a href="#">Služby ▾</a>
-            <div class="mega">
-              <div class="column">
-                <h3>Naše produkty</h3>
-                <a href="#">Prodej a nákup nemovitostí</a>
-                <a href="#">Financování bydlení</a>
-                <a href="#">Pojištění</a>
-              </div>
-              <div class="column">
-                <h3>Development a Investice</h3>
-                <a href="#">Výkup nemovitostí za hotovost</a>
-                <a href="#">Rekonstrukce bytových jednotek</a>
-                <a href="#">Rekonstrukce bytových domů</a>
-              </div>                    
+          </div>
+        </li>
+        <li><a href="#">Chci prodat</a></li>
+        <li>
+          <a href="#">Služby ▾</a>
+          <div class="mega">
+            <div class="column">
+              <h3>Naše produkty</h3>
+              <a href="#">Prodej a nákup nemovitostí</a>
+              <a href="#">Financování bydlení</a>
+              <a href="#">Pojištění</a>
             </div>
-          </li>
-          <li><a href="#">Aukce</a></li>         
-        </ul>
-      </nav>
-      <div class="topbar-icons">
-  <a href="#" class="icon-btn" aria-label="Notifikace"><i class="fas fa-bell"></i></a>
-  <a href="#" class="icon-btn" aria-label="Oblíbené"><i class="fas fa-heart"></i></a>
-  <a href="#" class="kontakty-btn">Kontakty</a>
+            <div class="column">
+              <h3>Development a Investice</h3>
+              <a href="#">Výkup nemovitostí</a>
+              <a href="#">Rekonstrukce bytů</a>
+              <a href="#">Rekonstrukce domů</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Aukce</a></li>
+      </ul>
+    </nav>
+  </div>
 </div>
 
-    </div>
+<!-- Mobilní panel -->
+<div id="mobile-panel" class="mobile-panel">
+  <ul class="mobile-list">
+    <li><a href="#">Nabídka nemovitostí</a></li>
+    <li><a href="#">Chci prodat</a></li>
+    <li><a href="#">Služby</a></li>
+    <li><a href="#">Aukce</a></li>
+    <li><a href="#">Kontakty</a></li>
+  </ul>
+  <div class="mobile-actions">
+    <a href="#" class="action-btn"><i class="fas fa-bell"></i> Upozornění</a>
+    <a href="#" class="action-btn"><i class="fas fa-heart"></i> Oblíbené</a>
+    <a href="tel:+420296399006" class="call-btn">
+      <i class="fas fa-phone"></i> +420 296 399 006
+    </a>
+    <p class="hours">8:00 - 20:00 (Po - Pá)<br>9:00 - 17:00 (So - Ne)</p>
   </div>
+</div>
+
 
   <!-- Hlavička s obrázkem -->
   <header>
@@ -107,6 +129,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
