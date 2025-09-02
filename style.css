@@ -308,7 +308,9 @@ input, select, button {
   transition: transform 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between;  
+  border: 2px solid red;
+
 }
 
 .mobile-panel.active {
@@ -518,6 +520,7 @@ input, select, button {
     display: none;
   }
 }
+
 
 
 
