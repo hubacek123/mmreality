@@ -291,18 +291,15 @@ input, select, button {
 /* Responsivita */
 @media (max-width: 768px) {
 
-  .topbar-icons {
-    display: none;
-  }
-
-  .mobile-only {
-    display: block;
-  }
-  
-.topbar {  
+   .topbar {  
   width: 100%;
   max-height: 180px;  
 }
+
+  .topbar-icons {
+    display: none;
+    color: white;
+  }
 
   .hamburger {
     display: flex;
@@ -438,11 +435,8 @@ input, select, button {
   }
 }
 
-@media (min-width: 769px) {
-  .mobile-only {
-    display: none;
-  }
-}
+
+
 
 
 
