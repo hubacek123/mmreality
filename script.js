@@ -1,4 +1,4 @@
-// Mobilní hamburger menu
+// Mobilní hamburger menu pro navMenu
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -21,9 +21,11 @@ offerButtons.forEach(button => {
   button.addEventListener('click', () => {
     offerButtons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
-    hiddenInput.value = button.textContent.trim(); // uloží "Prodej" nebo "Pronájem"
+    hiddenInput.value = button.textContent.trim();
   });
+});
 
+// Mobilní panel zprava
 const mobilePanel = document.getElementById('mobile-panel');
 
 hamburger.addEventListener('click', (e) => {
@@ -36,5 +38,4 @@ document.addEventListener('click', (e) => {
     mobilePanel.classList.remove('active');
   }
 });
-  
-});
+
