@@ -22,6 +22,28 @@ body {
   color: white;
 }
 
+.topbar-icons {
+  margin-left: auto;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icon-btn {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.kontakty-btn {
+  background-color: white;
+  color: black;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -269,6 +291,14 @@ input, select, button {
 /* Responsivita */
 @media (max-width: 768px) {
 
+  .topbar-icons {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+  
 .topbar {  
   width: 100%;
   max-height: 180px;  
@@ -407,6 +437,13 @@ input, select, button {
     color: #555;
   }
 }
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
 
 
 
