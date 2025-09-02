@@ -1,6 +1,10 @@
 // Mobilní hamburger menu
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+function toggleModal(id) {
+  const modal = document.getElementById(id);
+  modal.classList.toggle('hidden');
+}
 
 hamburger.addEventListener('click', (e) => {
   e.stopPropagation();
