@@ -312,6 +312,11 @@ input, select, button {
     width: 100%;
   }
 
+  header {
+    background-image: url('domov2.jpg');
+    height: 300px;
+  }
+
   header h1 {
     font-size: 30px;
     margin: 0 auto;
@@ -394,6 +399,7 @@ input, select, button {
     color: #555;
   }
 }
+
 
 
 
