@@ -1,224 +1,85 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #e6f4e6;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e6f4e6;
+    }
+    .hlavicka {
+      background-color: #4CAF50;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo img {
+      height: 60px;
+    }
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    } 
+    .dropdown.active .submenu,
+    .dropdown.active .megamenu-vertical {
+      display: flex;
+    }
+    .sluzby {
+  background-color: #f9f9f9;
+  padding: 10px;
 }
-
-.hlavicka {
-  width: 100%;
-  max-width: 1140px;
-  height: 500px;
+.sluzby-container {
+  display: flex;
+  gap: 10px;
+  max-width: 800px;
   margin: 0 auto;
-  background-color: #4CAF50;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
-  padding: 0 20px;
 }
-
-.logo img {
-  height: 80px;
-}
-
-.hamburger {
-  display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-.menu {
-  display: flex;
-}
-
-.menu ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-}
-
-.menu ul li {
-  position: relative;
-}
-
-.menu a,
-.menu-btn {
-  background: none;
-  border: none;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 10px;
-  text-decoration: none;
-}
-
-.menu a:hover,
-.menu-btn:hover {
-  text-decoration: underline;
-}
-
-.submenu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  display: none;
-  flex-direction: column;
-  min-width: 200px;
-  z-index: 1000;
-  border: 1px solid #ccc;
-}
-
-.submenu li a {
-  padding: 10px;
-  color: #000;
-  text-decoration: none;
-  display: block;
-}
-
-.submenu li a:hover {
-  background-color: #f0f0f0;
-}
-
-.megamenu-vertical {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  display: none;
-  flex-direction: row;
-  gap: 40px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  z-index: 1000;
-  min-width: 400px;
-}
-
-.megamenu-section {
+.sluzby-sloupec {
   flex: 1;
-  min-width: 200px;
+  min-width: 250px;
 }
-
-.megamenu-section h4 {
-  margin: 0 0 10px;
+.sluzby-sloupec h2 {
   font-size: 16px;
+  margin-bottom: 10px;
   color: #333;
 }
-
-.megamenu-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.megamenu-section li a {
-  padding: 8px 0;
-  color: #000;
-  text-decoration: none;
+.sluzba {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
 }
-
-.megamenu-section li a i {
+.sluzba i {
+  font-size: 19px;
   color: #4CAF50;
+  flex-shrink: 0;
 }
-
-.megamenu-section li a:hover {
-  text-decoration: underline;
+.sluzba-text h3 {
+  font-size: 13px;
+  margin: 0 0 6px;
+  color: #222;
 }
-
-.dropdown.active .submenu,
-.dropdown.active .megamenu-vertical {
-  display: flex;
+.sluzba-text p {
+  margin: 0;
+  font-size: 12px;
+  color: #555;
 }
-
-.kontakt a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-/* Mobilní verze */
 @media (max-width: 768px) {
-  .hlavicka {
-    height: auto;
-    padding: 20px 0;
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .logo img {
-    height: 60px;
-  }
-
-  .hamburger {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .menu {
-    display: none;
-    width: 100%;
-  }
-
-  .menu.active {
-    display: block;
-  }
-
-  .menu ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .menu ul li {
-    width: 100%;
-  }
-
-  .submenu,
-  .megamenu-vertical {
-    position: static;
-    border: none;
-    background-color: #f9f9f9;
-    padding: 10px;
-    display: none;
+  .sluzby-container {
     flex-direction: column;
   }
-
-  .dropdown.active .submenu,
-  .dropdown.active .megamenu-vertical {
-    display: flex;
-  }
-
-  .megamenu-section h4 {
-    font-size: 14px;
-  }
-
-  .megamenu-section li a {
-    padding: 6px 0;
-  }
-
-  .kontakt {
-    margin-top: 20px;
+  .sluzby-sloupec {
+    margin-bottom: 0px;
   }
 }
+
 
 
 
