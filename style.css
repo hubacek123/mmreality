@@ -321,7 +321,7 @@ input, select, button {
 
   header {
     background-image: url('domov2.jpg');
-    margin-top: 80px;
+    margin-top: 100px;
   }
 
   header h1 {
@@ -406,6 +406,7 @@ input, select, button {
     color: #555;
   }
 }
+
 
 
 
