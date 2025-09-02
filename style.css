@@ -271,22 +271,29 @@ input, select, button {
   color: #555;
 }
 
-.toggle-button {
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  background-color: #eee;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
+.topbar-icons {
+  margin-left: auto;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
-.toggle-button.active {
-  background-color: #039333;
+.icon-btn {
+  font-size: 20px;
   color: white;
-  border-color: #039333;
+  text-decoration: none;
 }
 
+.kontakty-btn {
+  background-color: white;
+  color: black;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Mobilní panel zprava */
 .mobile-panel {
   position: fixed;
   top: 0;
@@ -360,12 +367,6 @@ input, select, button {
   text-align: center;
   margin-top: 10px;
   color: #fff;
-}
-
-@media (min-width: 769px) {
-  .mobile-panel {
-    display: none;
-  }
 }
 
 /* Responsivita */
@@ -513,6 +514,14 @@ input, select, button {
     color: #555;
   }
 }
+
+@media (min-width: 769px) {
+  .mobile-panel {
+    display: none;
+  }
+}
+
+
 
 
 
