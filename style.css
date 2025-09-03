@@ -380,10 +380,93 @@ input, select, button {
     margin-top: 150px;
   }
 
-  header h2 {
+   header h2 {
     font-size: 20px;
     margin: 0 auto;
-    padding:
+    padding: 30px;
+  }
+
+  .logo {
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  header {
+    margin-top: 60px;
+  }
+
+  .search-box {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .search-box form {
+    display: block;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .toggle-button {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .search-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .search-id {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .recent-searches {
+    margin-top: -20px;
+    font-size: 13px;
+    color: #555;
+  }
+
+  .topbar-icons {
+    display: none;
+  }
+
+  /* Zobrazit tlačítko MENU jen na mobilech */
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
 
 
 
