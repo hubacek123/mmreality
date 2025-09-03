@@ -20,24 +20,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Accordion sekce v modalu
+  // Hlavní accordion sekce v modalu
   const accordionToggles = document.querySelectorAll('.accordion-toggle');
-  if (accordionToggles.length > 0) {
-    accordionToggles.forEach(toggle => {
-      toggle.addEventListener('click', () => {
-        const panel = toggle.nextElementSibling;
-        const isOpen = panel.style.display === 'block';
+  accordionToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const panel = toggle.nextElementSibling;
+      const isOpen = panel.style.display === 'block';
 
-        // Zavřít všechny ostatní panely
-        document.querySelectorAll('.accordion-panel').forEach(p => {
-          p.style.display = 'none';
-        });
-
-        // Přepnout aktuální panel
-        panel.style.display = isOpen ? 'none' : 'block';
+      // Zavřít všechny hlavní panely
+      document.querySelectorAll('.accordion-panel').forEach(p => {
+        p.style.display = 'none';
       });
+
+      // Přepnout aktuální hlavní panel
+      panel.style.display = isOpen ? 'none' : 'block';
     });
-  }
+  });
+
+  // Vnořený accordion pro podsekce Služeb
+  const subToggles = document.querySelectorAll('.accordion-subtoggle');
+  subToggles.forEach(subToggle => {
+    subToggle.addEventListener('click', () => {
+      const subPanel = subToggle.nextElementSibling;
+      const isOpen = subPanel.style.display === 'block';
+
+      // Zavřít všechny podsekce
+      document.querySelectorAll('.accordion-subpanel').forEach(p => {
+        p.style.display = 'none';
+      });
+
+      // Přepnout aktuální podsekci
+      subPanel.style.display = isOpen ? 'none' : 'block';
+    });
+  });
 
   // Přepínání tlačítek Prodej / Pronájem + uložení výběru
   const offerButtons = document.querySelectorAll('#offer-type .toggle-button');
@@ -53,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
 
 
 
