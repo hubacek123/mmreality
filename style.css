@@ -24,8 +24,7 @@ body {
 
 .topbar-icons {   
   gap: 15px;
-  align-items: center;
-  padding: 60px 15px;
+  align-items: center; 
 }
 
 .icon-btn {
@@ -404,6 +403,7 @@ input, select, button {
     color: #555;
   } 
 }
+
 
 
 
