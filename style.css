@@ -264,7 +264,8 @@ input, select, button {
   font-size: 16px;
   border-radius: 5px;
   margin: 10px auto; 
-  z-index: 1001;
+  z-index: 1001; 
+  display: block; 
 }
 
 .modal {
@@ -483,9 +484,10 @@ input, select, button {
 
   /* Zobrazit tlačítko MENU jen na mobilech */
   .menu-toggle {
-    display: none;
+    display: block;
   }
 }
+
 
 
 
