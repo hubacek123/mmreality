@@ -1,5 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {     
-      const navMenu = document.querySelector('.nav-menu'); 
+document.addEventListener("DOMContentLoaded", function() {
+  const element = document.getElementById("some-id");
+  if (element) {
+    element.addEventListener("click", function() {
+      // your logic here
+    });
+  }
+});
+
      
         if (window.innerWidth <= 768) {        
           navMenu.classList.remove('active');
