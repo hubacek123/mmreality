@@ -1,10 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobilní hamburger menu
-  const hamburger = document.querySelector('.hamburger');
   const navMenu = document.querySelector('.nav-menu');
 
-  if (hamburger && navMenu) {
-    hamburger.addEventListener('click', (e) => {
+  if (hamburger && navMenu) {   
       e.stopPropagation();
       navMenu.classList.toggle('active');
     });
