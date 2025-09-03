@@ -22,14 +22,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Accordion sekce v modalu
   const accordionToggles = document.querySelectorAll('.accordion-toggle');
-  accordionToggles.forEach(toggle => {
-    toggle.addEventListener('click', () => {
-      const panel = toggle.nextElementSibling;
-      const isOpen = panel.style.display === 'block';
-      document.querySelectorAll('.accordion-panel').forEach(p => p.style.display = 'none');
-      panel.style.display = isOpen ? 'none' : 'block';
+  if (accordionToggles.length > 0) {
+    accordionToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const panel = toggle.nextElementSibling;
+        const isOpen = panel.style.display === 'block';
+
+        // Zavřít všechny ostatní panely
+        document.querySelectorAll('.accordion-panel').forEach(p => {
+          p.style.display = 'none';
+        });
+
+        // Přepnout aktuální panel
+        panel.style.display = isOpen ? 'none' : 'block';
+      });
     });
-  });
+  }
 
   // Přepínání tlačítek Prodej / Pronájem + uložení výběru
   const offerButtons = document.querySelectorAll('#offer-type .toggle-button');
@@ -45,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
 
 
 
