@@ -42,8 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         button.classList.add('active');
         hiddenInput.value = button.textContent.trim();
       });
-    });
-  }
+    }); 
 });
 
 
