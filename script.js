@@ -1,21 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const navMenu = document.querySelector('.nav-menu');
-
-  // Pokud chceš menu ovládat jiným tlačítkem (např. MENU v mobilní verzi)
+  // MODAL menu
+  const modal = document.getElementById('menuModal');
   const menuToggle = document.getElementById('menuToggle');
+  const closeModal = document.querySelector('.close-modal');
 
-  if (menuToggle && navMenu) {
-    menuToggle.addEventListener('click', (e) => {
-      e.stopPropagation();
-      navMenu.classList.toggle('active');
+  if (menuToggle && modal) {
+    menuToggle.addEventListener('click', () => {
+      modal.style.display = 'block';
     });
 
-    document.addEventListener('click', (e) => {
-      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-        navMenu.classList.remove('active');
+    closeModal.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
       }
     });
   }
+
+  // Accordion sekce v modalu
+  const accordionToggles = document.querySelectorAll('.accordion-toggle');
+  accordionToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const panel = toggle.nextElementSibling;
+      const isOpen = panel.style.display === 'block';
+      document.querySelectorAll('.accordion-panel').forEach(p => p.style.display = 'none');
+      panel.style.display = isOpen ? 'none' : 'block';
+    });
+  });
 
   // Přepínání tlačítek Prodej / Pronájem + uložení výběru
   const offerButtons = document.querySelectorAll('#offer-type .toggle-button');
@@ -31,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
 
 
 
