@@ -22,9 +22,7 @@ body {
   color: white;
 }
 
-.topbar-icons {
-  margin-right: -300px;
-  display: flex;
+.topbar-icons {  
   gap: 15px;
   align-items: center;
 }
@@ -405,6 +403,7 @@ input, select, button {
     color: #555;
   } 
 }
+
 
 
 
