@@ -1,13 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.querySelector('.nav-menu');
 
-  if (hamburger && navMenu) {   
+  // Pokud chceš menu ovládat jiným tlačítkem (např. MENU v mobilní verzi)
+  const menuToggle = document.getElementById('menuToggle');
+
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', (e) => {
       e.stopPropagation();
       navMenu.classList.toggle('active');
     });
 
     document.addEventListener('click', (e) => {
-      if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
         navMenu.classList.remove('active');
       }
     });
@@ -27,5 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
 
 
