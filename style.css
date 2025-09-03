@@ -274,7 +274,7 @@ input, select, button {
 }
 .modal {
   position: absolute; 
-  top: 180px; /* nebo výška topbaru/logo */
+  top: 150px; /* nebo výška topbaru/logo */
   left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
@@ -576,6 +576,7 @@ input, select, button {
     display: block;
   }
 }
+
 
 
 
