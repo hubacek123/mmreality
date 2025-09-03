@@ -292,6 +292,8 @@ input, select, button {
   max-width: 500px;
   box-sizing: border-box;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  max-height: calc(100vh - 100px); /* výška viewportu minus logo */
+  overflow-y: auto;
 }
 
 
@@ -573,6 +575,7 @@ input, select, button {
     display: block;
   }
 }
+
 
 
 
