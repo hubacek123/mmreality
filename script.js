@@ -1,5 +1,5 @@
-// Mobilní hamburger menu
 document.addEventListener('DOMContentLoaded', () => {
+  // Mobilní hamburger menu
   const hamburger = document.querySelector('.hamburger');
   const navMenu = document.querySelector('.nav-menu');
 
@@ -25,9 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
       button.addEventListener('click', () => {
         offerButtons.forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
-        hiddenInput.value = button.textContent.trim(); // uloží "Prodej" nebo "Pronájem"
+        hiddenInput.value = button.textContent.trim();
       });
     });
   }
 });
+
 
