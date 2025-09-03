@@ -403,10 +403,11 @@ input, select, button {
     color: #555;
   } 
 
-  .topbar-icons {   
-  display: none;
+ .mobilni-skryt {
+    display: none;
+  }
 }
-}
+
 
 
 
