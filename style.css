@@ -396,6 +396,19 @@ input, select, button {
   margin: 20px 0;
 }
 
+.modal-actions-box {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin: 20px auto;
+  max-width: 320px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
 .action-btn {
   background-color: white;
   color: #3a7c31;
@@ -414,6 +427,7 @@ input, select, button {
 .action-btn:hover {
   background-color: #f0f0f0;
 }
+
 
 
 
@@ -557,6 +571,7 @@ input, select, button {
     display: block;
   }
 }
+
 
 
 
