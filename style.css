@@ -355,6 +355,41 @@ input, select, button {
   margin-bottom: 10px;
 }
 
+.accordion-subitem {
+  margin-top: 10px;
+}
+
+.accordion-subtoggle {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.accordion-subpanel {
+  display: none;
+  margin-left: 20px;
+}
+
+.accordion-subpanel a {
+  display: block;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  margin: 8px 0;
+}
+
+.accordion-subpanel i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+
 /* Responsivita */
 @media (max-width: 768px) {
   .topbar {
@@ -495,6 +530,7 @@ input, select, button {
     display: block;
   }
 }
+
 
 
 
