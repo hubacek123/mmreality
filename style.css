@@ -263,8 +263,9 @@ input, select, button {
   font-weight: bold;
   font-size: 16px;
   border-radius: 5px;
-  margin-top: 10px;
-  align-self: flex-start;
+  margin: 10px auto;
+  display: block;
+  z-index: 1001;
 }
 
 .modal {
@@ -277,34 +278,14 @@ input, select, button {
 }
 
 .modal-content {
-  background: white;
-  margin: 15% auto;
+  background: #3a7c31;
+  color: white;
+  margin: 10% auto;
   padding: 20px;
   width: 90%;
   max-width: 400px;
   border-radius: 10px;
   position: relative;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-.modal-content h3 {
-  margin-top: 20px;
-  font-size: 18px;
-  color: #3a7c31;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
-}
-
-.modal-content a {
-  display: block;
-  margin: 8px 0;
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.modal-content a:hover {
-  text-decoration: underline;
 }
 
 .close-modal {
@@ -313,14 +294,57 @@ input, select, button {
   right: 15px;
   font-size: 24px;
   cursor: pointer;
-  color: #333;
+  color: white;
+}
+
+.accordion a {
+  display: block;
+  margin: 8px 0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.accordion-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+}
+
+.accordion-panel {
+  display: none;
+  margin-left: 10px;
+}
+
+.accordion-panel a {
+  font-size: 14px;
+  margin: 5px 0;
 }
 
 .modal-footer {
   margin-top: 20px;
-  font-size: 14px;
-  color: #555;
   text-align: center;
+  font-size: 14px;
+}
+
+.phone-btn {
+  display: block;
+  margin: 10px 0;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.icon-btn {
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
 }
 
 /* Responsivita */
@@ -463,6 +487,7 @@ input, select, button {
     display: block;
   }
 }
+
 
 
 
