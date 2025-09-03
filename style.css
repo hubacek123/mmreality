@@ -404,11 +404,11 @@ input, select, button {
 .modal-actions-box {
   display: flex;
   justify-content: center;
-  gap: 15px;  
-  border-radius: 15px;
+  gap: 15px;
   padding: 15px 20px;
   margin: 20px auto;
-  max-width: 320px;  
+  max-width: 320px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .action-btn {
@@ -573,6 +573,7 @@ input, select, button {
     display: block;
   }
 }
+
 
 
 
