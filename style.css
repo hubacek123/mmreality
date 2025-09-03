@@ -263,10 +263,10 @@ input, select, button {
   font-weight: bold;
   font-size: 16px;
   border-radius: 5px;
-  margin: 10px auto; 
-  z-index: 1001; 
-  display: block; 
+  margin: 10px auto;
+  z-index: 1001;
 }
+
 
 .modal {
   display: none;
@@ -487,6 +487,7 @@ input, select, button {
     display: block;
   }
 }
+
 
 
 
