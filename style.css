@@ -330,10 +330,6 @@ input, select, button {
     max-height: 180px;
   }
 
-  .menu-toggle {
-    display: block;
-  }
-
   .nav-menu {
     flex-direction: column;
     overflow: hidden;
@@ -467,6 +463,7 @@ input, select, button {
     display: block;
   }
 }
+
 
 
 
