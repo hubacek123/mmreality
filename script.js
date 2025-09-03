@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.getElementById('menuToggle');
   const closeModal = document.querySelector('.close-modal');
 
-  if (menuToggle && modal) {
+  if (menuToggle && modal && closeModal) {
     menuToggle.addEventListener('click', () => {
       modal.style.display = 'block';
     });
@@ -42,8 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
         button.classList.add('active');
         hiddenInput.value = button.textContent.trim();
       });
-    }); 
+    });
+  }
 });
+
 
 
 
