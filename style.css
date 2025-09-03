@@ -272,18 +272,6 @@ input, select, button {
     display: block;
   }
 }
-
-
-.modal-nav a,
-.accordion-toggle,
-.accordion-panel a,
-.accordion-subtoggle,
-.accordion-subpanel a {
-  text-align: right;
-  display: block;
-}
-
-
 .modal {
   position: absolute;
   top: 80px; /* nebo výška topbaru/logo */
@@ -588,6 +576,7 @@ input, select, button {
     display: block;
   }
 }
+
 
 
 
