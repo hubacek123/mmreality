@@ -283,7 +283,9 @@ input, select, button {
 }
 
 .modal-content {
-  background: #3a7c31;
+  background-color: rgba(58, 124, 49, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: white;
   margin: 0 auto;
   padding: 20px;
@@ -573,6 +575,7 @@ input, select, button {
     display: block;
   }
 }
+
 
 
 
