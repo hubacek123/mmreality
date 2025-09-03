@@ -347,6 +347,12 @@ input, select, button {
   margin-right: 10px;
 }
 
+/* Zobrazit tlačítko MENU jen na mobilech */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  }
 /* Responsivita */
 @media (max-width: 768px) {
   .topbar {
@@ -487,6 +493,7 @@ input, select, button {
     display: block;
   }
 }
+
 
 
 
