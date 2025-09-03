@@ -103,12 +103,15 @@
 </main> 
 <script src="script.js" defer></script>
   
+<!-- Tlačítko MENU pro mobilní verzi -->
+<button id="menuToggle" class="menu-toggle">MENU</button>
+
 <!-- MODAL menu -->
 <div id="menuModal" class="modal">
   <div class="modal-content">
     <span class="close-modal">&times;</span>
 
-    <div class="accordion">
+    <nav class="modal-nav">
       <div class="accordion-item">
         <button class="accordion-toggle">Nabídka nemovitostí</button>
         <div class="accordion-panel">
@@ -126,10 +129,17 @@
           <a href="#">Kontakty</a>
         </div>
       </div>
+
+      <a href="#">Aukce</a>
+      <a href="#">Kontakty</a>
+    </nav>
+
+    <div class="modal-icons">
+      <a href="#"><i class="fas fa-bell"></i></a>
+      <a href="#"><i class="fas fa-cog"></i></a>
     </div>
 
     <div class="modal-footer">
-      <a href="#" class="icon-btn"><i class="fas fa-bell"></i></a>
       <a href="tel:+420296399006" class="phone-btn">
         <i class="fas fa-phone"></i> +420 296 399 006
       </a>
@@ -139,8 +149,10 @@
 </div>
 
 
+
 </body>
 </html>
+
 
 
 
